@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularz HTML</title>
+</head>
+
+<body>
+    <form action="https://formspree.io/mariusz.orbik@gmail.com" method="POST" autocomplete="on">
+        <fieldset>
+            <legend>Customer Info</legend>
+
+            <label for="name">Name</label><br>
+            <input type="text" name="name" id="name" autofocus placeholder="Enter your name" required><br>
+
+            <label for="nazwisko">Nazwisko</label><br/>
+            <input type="text" name="nazwisko" id="nazwisko"><br>
+
+            <label for="email">e-mail</label><br>
+            <input type="email" name="email" id="email"><br>
+
+            <label for="numer">Nr telefonu</label><br>
+            <input type="number" name="numer" id="numer"><br>
+        </fieldset>
+        <fieldset>
+            <legend>Books</legend>
+            <p>Quantity</p>
+        </fieldset><br>
+
+        <input type="submit" value="Submit">
+
+    </form>
+
+</body>
+
+</html>
