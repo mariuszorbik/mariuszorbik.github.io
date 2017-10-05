@@ -8,24 +8,38 @@
 
 <body>
     <form action="https://formspree.io/mariusz.orbik@gmail.com" method="POST" autocomplete="on">
+       
+        <h2 style="color: darkblue"><b>A Simple Form</b></h2>
+        <h4 style="color: darkblue"><i>Form Fundamentals</i></h4>
         <fieldset>
             <legend>Customer Info</legend>
 
-            <label for="name">Name</label><br>
-            <input type="text" name="name" id="name" autofocus placeholder="Enter your name" required><br>
+            <label for="name" style="text-indent: 10px">Name</label>
+            <input type="text" name="name" id="name" autofocus placeholder="Enter your name" required><br><br>
+            
+            <label for="phone">Telephone</label>
+            <input type="tel" name="phone" id="phone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Pattern 1-234-567-8910" required><br><br>
 
-            <label for="nazwisko">Nazwisko</label><br/>
-            <input type="text" name="nazwisko" id="nazwisko"><br>
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email address"  pattern=" +@+ " required multiple><br><br>
 
-            <label for="email">e-mail</label><br>
-            <input type="email" name="email" id="email"><br>
-
-            <label for="numer">Nr telefonu</label><br>
-            <input type="number" name="numer" id="numer"><br>
+            
         </fieldset>
         <fieldset>
             <legend>Books</legend>
-            <p>Quantity</p>
+            
+            <input list="books" name="books">
+            <datalist id="books">
+                <option value="Harry Potter">
+                <option value="Edge">
+                <option value="Steve Jobs Biography">
+                <option value="Millennium">
+                <option value="Mikołajek">
+            </datalist>
+            
+            <label for="quantity">Quantity (Maximum 5) </label>
+            <input type="number" name="quantity" id="quantity" min="1" max="5">
+            
         </fieldset><br>
 
         <input type="submit" value="Submit">
