@@ -8,7 +8,7 @@
 
 <body>
     <form action="https://formspree.io/mariusz.orbik@gmail.com" method="POST" autocomplete="on">
-       
+
         <h2 style="color: darkblue"><b>A Simple Form</b></h2>
         <h4 style="color: darkblue"><i>Form Fundamentals</i></h4>
         <fieldset>
@@ -16,18 +16,18 @@
 
             <label for="name" style="text-indent: 10px">Name</label>
             <input type="text" name="name" id="name" autofocus placeholder="Enter your name" required><br><br>
-            
+
             <label for="phone">Telephone</label>
             <input type="tel" name="phone" id="phone" pattern="\d{1}[\-]\d{3}[\-]\d{3}[\-]\d{4}" placeholder="Pattern 1-234-567-8910" required><br><br>
 
             <label for="email">Email Address</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email address"  pattern=" +@+ " required multiple><br><br>
+            <input type="email" name="email" id="email" placeholder="Enter your email address" required multiple><br><br>
 
-            
+
         </fieldset>
         <fieldset>
             <legend>Books</legend>
-            
+
             <input list="books" name="books">
             <datalist id="books">
                 <option value="Harry Potter">
@@ -36,10 +36,10 @@
                 <option value="Millennium">
                 <option value="Mikołajek">
             </datalist>
-            
+
             <label for="quantity">Quantity (Maximum 5) </label>
             <input type="number" name="quantity" id="quantity" min="1" max="5">
-            
+
         </fieldset><br>
 
         <input type="submit" value="Submit">
