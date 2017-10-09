@@ -1,0 +1,39 @@
+@media all and (max-width: 1170px) {
+    #obrazek-2 {
+        z-index: 2;
+    }
+    
+    img {
+        height: 70vh;
+    }
+    
+    #tekst {
+        position: relative;
+        float: right;
+        top: auto;
+        margin-top: 50px;
+    }
+}
+    
+@media all and (max-width: 992px) {
+    #obrazek-2 {
+        z-index: 0;
+        position: relative;
+    }
+    
+    img {
+        height: 50vh;
+    }
+    
+    
+    h1, h2 {
+        color: black;
+    }
+    
+    #tekst {
+        position: relative;
+        top: auto;
+        float: none;
+        text-align: center;
+    }
+}
