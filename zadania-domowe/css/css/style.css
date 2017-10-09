@@ -1,0 +1,30 @@
+body {
+    margin: 0;
+}
+
+img {
+    margin-top: 100px;
+    padding: 5px;
+    border: solid;
+    height: 360px;
+    width: 660px;
+}
+
+p {
+    position: absolute;
+    color: white;
+    left: 30vw; 
+    font-size: 70px;
+    background-color: rgba(74, 74, 73, 0.8);
+    top: 11vw;
+    width: 40vw;
+    text-align: center;  
+}
+
+div {
+    text-align: center;
+    display: block;
+    background-color: aqua;
+    height: auto;
+    width: 100%;    
+}

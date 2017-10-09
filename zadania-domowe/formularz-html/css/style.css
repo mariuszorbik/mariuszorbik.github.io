@@ -1,0 +1,54 @@
+form {
+    background-color: #213b50;
+    width: 40%;
+    padding: 20px;
+    color: white;
+}
+
+label, input {
+    display: block;
+}
+
+label, p, #zgoda {
+    color: white;
+}
+
+input, select {
+    background-color: #2b4a64;
+    padding: 0;
+    margin: 5px;
+    border: none;
+    
+}
+
+textarea {
+    background-color: #2b4a64;
+    border: none;
+    width: 50%;
+} 
+
+select {
+    background-color: #2b4a64;
+    color: white;
+}
+
+input:focus, textarea:focus option:focus{
+    background-color: #4e708c;
+    border: 1px solid #ffffff;
+    outline: 0;
+}
+
+
+
+input[type="submit"] {
+    background-color: lawngreen;
+    color: white;
+    padding: 8px;
+    text-transform: uppercase;
+    
+}
+
+input[type="text"], input[type="email"], input[type="number"], #miasto {
+    width: 50%;
+}
+

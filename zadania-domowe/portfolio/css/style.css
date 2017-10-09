@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+.clear {
+    clear: both;
+}
+
+/*nawigacja*/
+#menu {
+    position: fixed;
+    width: 100%;
+    text-align: right;
+    z-index: 1;
+    margin: 0;
+    height: 50px;
+}
+
+.menu_list {
+    color: black;
+    display: inline-block;
+    margin-right: 60px;
+    line-height: 50px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+   
+}
+
+a {
+    text-decoration: none;
+    color: white;
+     color: limegreen;
+}
+
+/*header */
+#glowny {
+    position: relative;
+    color: white;
+    height: 90vh;
+    width: 100%;
+    background-image: url('../img/header-background.jpg'); 
+    background-size:cover;
+}
+
+.kontener {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+h1, h3 {
+    font-weight: 100;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+span {
+    color: limegreen;
+    font-weight: 400;
+}
+
+/*sekcja o mnie*/
+
+#about {
+    text-align: center;
+    padding: 30px;
+}
+
+#zdjecie_sekcja, #tekst_sekcja {
+    display: inline-block;
+    width: 50%;
+    margin: 0;
+    float: left;
+    
+}
+
+section #zdjecie_sekcja img {
+    width: 50%;
+}
+
+#tekst_sekcja {
+    text-align: left;
+}
+
+/*sekcja umiejetnosci*/
+#skills {
+    display: block;
+    padding: 50px;
+    text-align: center;
+}
+
+#skills figure {
+    display: inline-block;
+    
+}
+
+/*sekcja portfolio*/
+#portfolio {
+    text-align: center;
+    padding: 50px;
+    height: 350px;
+}
+
+#portfolio div {
+    margin: 0 auto;
+    width: 100%;
+}
+
+#projekt-1 {
+    background-image: url("../img/portfolio1.jpg");
+}
+
+#projekt-2 {
+    background-image: url("../img/portfolio2.jpg");
+}
+
+#projekt-3 {
+    background-image: url("../img/portfolio4.jpg");
+}
+
+#portfolio .background {
+    display: inline-block;
+    width: 32%;
+    height: 100%;
+    background-size: cover;
+    margin: 0 auto;
+    background-position: center;
+}
+
+
+
