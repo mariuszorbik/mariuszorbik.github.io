@@ -8,32 +8,21 @@ body {
 
 #main {
     position: relative;
-    text-align: left;
-    height: 900px;
 }
 
-figure {
-    position: absolute;
+#container {
+    background: url('../rwd-materialy/obrazy/man-1.jpg');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100%;
-    margin: 0 auto;
-}
-
-img {
-    width: 100%;
-}
-
-#obrazek-1 {
-    z-index: 1;
-}
-
-#obrazek-2 {
-    z-index: 0;
+    height: 100vh;
 }
 
 #tekst {
     position: absolute;
     top: 50%;
-    z-index: 3;
+    width: auto;
 }
 
 h1, h2 {
