@@ -19,6 +19,11 @@ body {
     z-index: 1;
     margin: 0;
     height: 50px;
+    background-color: white;
+}
+
+#menu .toggle, [id="drop"] {
+    display: none;
 }
 
 .menu_list {
@@ -31,13 +36,13 @@ body {
 nav ul {
     list-style-type: none;
     margin: 0;
-   
+    background-color: #fff;
 }
 
 a {
     text-decoration: none;
     color: white;
-     color: limegreen;
+    color: #1ac056;
 }
 
 /*header */
@@ -47,6 +52,7 @@ a {
     height: 90vh;
     width: 100%;
     background-image: url('../img/header-background.jpg'); 
+    background-position: center;
     background-size:cover;
 }
 
@@ -62,6 +68,10 @@ h1, h3 {
     font-weight: 100;
 }
 
+#footer #kontakt address {
+    text-decoration:none;
+}
+
 h1 {
     font-size: 60px;
 }
@@ -71,12 +81,16 @@ h3 {
 }
 
 span {
-    color: limegreen;
+    color: #1ac056;
     font-weight: 400;
 }
 
 /*sekcja o mnie*/
 
+section {
+    padding: 0 80px 100px;
+    width: 100%;
+}
 #about {
     text-align: center;
     padding: 30px;
@@ -87,7 +101,6 @@ span {
     width: 50%;
     margin: 0;
     float: left;
-    
 }
 
 section #zdjecie_sekcja img {
@@ -105,43 +118,198 @@ section #zdjecie_sekcja img {
     text-align: center;
 }
 
+#skills article {
+    padding: 40px;
+}
+
 #skills figure {
     display: inline-block;
-    
 }
 
 /*sekcja portfolio*/
 #portfolio {
-    text-align: center;
-    padding: 50px;
-    height: 350px;
-}
-
-#portfolio div {
-    margin: 0 auto;
-    width: 100%;
-}
-
-#projekt-1 {
-    background-image: url("../img/portfolio1.jpg");
-}
-
-#projekt-2 {
-    background-image: url("../img/portfolio2.jpg");
-}
-
-#projekt-3 {
-    background-image: url("../img/portfolio4.jpg");
-}
-
-#portfolio .background {
     display: inline-block;
-    width: 32%;
-    height: 100%;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 0;
+}
+#portfolio h2 {
+    font-size: 25px;
+}
+
+.background {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+    margin: 0;
+    padding: 0;
     background-size: cover;
-    margin: 0 auto;
     background-position: center;
 }
+
+.tlo {
+    background-color: rgba(115, 115, 115, 0.7); 
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+}
+
+.tlo:hover {
+    opacity: 1;
+    transition: 1s; 
+}
+    
+.mask {
+    position: relative;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+   
+}
+
+#obraz-1 {
+    background-image: url('../img/portfolio1.jpg');
+}
+
+#obraz-2 {
+    background-image: url('../img/portfolio2.jpg');
+}
+
+#obraz-3 {
+    background-image: url('../img/portfolio3.jpg');
+}
+
+.content {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-size: 12px;
+}
+
+.background .tlo .mask .content .fa-link {
+    border: none;
+}
+
+.background .tlo .mask .content a {
+    color:  white;
+}
+
+.background .tlo .mask .content a:hover {
+    color: #1ac056;
+}
+
+/*stopka*/
+
+footer {
+    background-color:  #213b50;
+    width: 100%;    
+    padding: 30px;
+    color: white;
+    font-weight: 100;
+}
+
+footer h2 {
+    margin: 0;
+}
+
+#form, #kontakt {
+    display: inline-block;
+    width: 49%;
+}
+
+input, textarea {
+    background-color: #2b4a64;
+    border: none;
+    color: white;
+    width: 100%; 
+    margin-bottom: 20px;
+    line-height: 30px;
+    
+}
+
+input:focus, textarea:focus {
+    background-color: #3b4a64;
+    border: 1px solid blue;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #fff;
+}
+
+input[type="submit"] {
+    background-color: #1ac056;
+    color: white;
+    padding: 5px;
+    text-transform: uppercase;
+    width: auto;
+    border: 1px solid #1ac056;
+}
+
+input[type="submit"]:hover {
+    background-color: #fff;
+    border: 1px solid #1ac056;
+    color: #1ac056;
+}
+
+#kontakt {
+    float: left;
+    margin-top: 30px;
+}
+
+#form {
+    text-align: right;
+    margin-top: 30px;
+}
+
+footer #kontakt i {
+    font-size: 20px;
+    border: 1px solid white;
+    line-height: 30px;
+    width: 30px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+footer #kontakt a {
+    color: white;
+}
+
+footer #kontakt a:hover {
+    color: #1ac056;
+}
+
+address {
+    margin-bottom: 20px;
+    font-style: normal;
+    line-height: 25px;
+}
+
+#copyright {
+    background-color: #218b70; 
+    padding: 5px;
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

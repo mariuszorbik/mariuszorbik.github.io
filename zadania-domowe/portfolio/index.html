@@ -5,17 +5,22 @@
     <meta charset="UTF-8">
     <title>Portfolio</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Roboto:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
 </head>
 
 <body>
 
     <nav id="menu">
+       
+       <label for="drop" class="toggle">Menu</label>
+       <input type="checkbox" id="drop">
         <ul>
-            <li class="menu_list"><a href="">o mnie</a></li>
-            <li class="menu_list"><a href="">umiejętności</a></li>
-            <li class="menu_list"><a href="">portfolio</a></li>
-            <li class="menu_list"><a href="">kontakt</a></li>
+            <li class="menu_list"><a href="#about">o mnie</a></li>
+            <li class="menu_list"><a href="#skills">umiejętności</a></li>
+            <li class="menu_list"><a href="#portfolio">portfolio</a></li>
+            <li class="menu_list"><a href="#stopka">kontakt</a></li>
         </ul>
     </nav>
 
@@ -36,59 +41,102 @@
         <article id="tekst_sekcja">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo enim architecto odio hic! Similique, iure quisquam facere doloremque, odit officia voluptas alias modi libero dolor quis cumque ipsum accusamus voluptatum dolore quos quidem! Dolorum vero id at ratione repudiandae accusantium, perspiciatis neque commodi nostrum cupiditate aliquam delectus magnam asperiores eum.</article>
         <div class="clear"></div>
     </section>
-    
-    
+<hr>
+
     <sekcja id="skills">
         <h2>Moje <span>umiejętności</span></h2>
         <article>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro delectus fuga, suscipit voluptate quos assumenda facilis eaque est corporis numquam dolor autem dignissimos at molestiae nemo nisi quis. Provident ipsa eligendi ducimus quas aliquam, blanditiis atque quaerat id qui dolorem.</article>
-        <figure><img src="icons/html5.png" alt=""><figcaption>HTML5</figcaption></figure>
-        <figure><img src="icons/css3.png" alt=""><figcaption>CSS3</figcaption></figure>
-        <figure><img src="icons/js.png" alt=""><figcaption>JavaScript</figcaption></figure>
-        <figure><img src="icons/jquery.png" alt=""><figcaption>jQuery</figcaption></figure>
+        <figure>
+           <img src="icons/html5.png" alt="">
+            <figcaption>HTML5</figcaption>
+        </figure>
+        <figure>
+           <img src="icons/css3.png" alt="">
+            <figcaption>CSS3</figcaption>
+        </figure>
+        <figure>
+           <img src="icons/js.png" alt="">
+            <figcaption>JavaScript</figcaption>
+        </figure>
+        <figure>
+           <img src="icons/jquery.png" alt="">
+            <figcaption>jQuery</figcaption>
+        </figure>
     </sekcja>
-    
+
     <section id="portfolio">
-        <h2></h2>
-        <figure id="projekt-1" class="background"><img src="" alt=""></figure>
-        
-        <div class="mask">
-            <div class="content"></div>
+        <h2>Moje <span>portfolio</span></h2>
+        <div id="obraz-1" class="background">
+            <div class="tlo">
+                <div class="mask">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque iure omnis perferendis. Quisquam numquam saepe nostrum, ad tenetur non velit dicta voluptates praesentium consequuntur expedita adipisci id iure eaque totam error illum eos minus ipsum vitae obcaecati molestias laudantium consectetur ratione quos.</p>
+                        <h3>Wykorzystane technologie</h3>
+                        <p>HTML5, CSS3, JavaScript, jQuery</p>
+                        <a href="#" class="project-link"><i class="fa fa-link fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <figure id="projekt-1" class="background"><img src="" alt=""></figure>
-        
-        <div class="mask">
-            <div class="content"></div>
+
+        <div id="obraz-2" class="background">
+            <div class="tlo">
+                <div class="mask">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, consequatur officia quia, minima natus eveniet commodi debitis itaque quos voluptates quas ducimus cupiditate, ipsa officiis. Explicabo earum ea qui recusandae facilis officiis quisquam repellendus sunt similique, quasi fuga, minima ut quaerat quae nulla.</p>
+                        <h3>Wykorzystane technologie</h3>
+                        <p>HTML5, CSS3, JavaScript, jQuery</p>
+                        <a href="#" class="project-link"><i class="fa fa-link fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <figure id="projekt-1" class="background"><img src="" alt=""></figure>
-        
-        <div class="mask">
-            <div class="content"></div>
+
+        <div id="obraz-3" class="background">
+            <div class="tlo">
+                <div class="mask">
+                    <div class="content">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis molestiae, repudiandae! Voluptatibus reiciendis iure in ullam quaerat sit quia maiores, iusto praesentium non! Ipsum dignissimos dolor tempore placeat minus provident mollitia ratione?</p>
+                        <h3>Wykorzystane technologie</h3>
+                        <p>HTML5, CSS3, JavaScript, jQuery</p>
+                        <a href="#" class="project-link"><i class="fa fa-link fa-2x"></i></a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
+
+    <footer id="stopka">
+        <h2>Mariusz <span>Orbik</span></h2>
+        <div id="kontakt">
+            <address>ul. Marii Dąbrowskiej 13/22<br>
+               01-903 Warszawa<br><br>
+               tel: 508 753 360<br>
+               e-mail: <a href="mailto:mariusz.orbik@gmail.com">
+                   mariusz.orbik@gmail.com
+               </a>
+               </address>
+                
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+       
+        </div>
+        <div id="form">
+            <form action="https://formspree.io/mariusz.orbik@gmail.com" method="post">
+                <input type="text" name="name" placeholder="Imię i nazwisko"><br>
+                <input type="email" name="email" placeholder="E-mail"><br>
+                <textarea name="message" placeholder="Treść wiadomości"></textarea><br>
+                <input type="submit" value="Wyślij">
+            </form>
+        </div>
+    </footer>
     
-<!--
-    <section id="portfolio">
-       <h2>Moje <span>portfolio</span></h2>
-        <div class="background" id="projekt-1">
-            <div class="mask">
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="background" id="projekt-2">
-            <div class="mask">
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="background" id="projekt-3">
-            <div class="mask">
-                <div class="content"></div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </section>
--->
-    
-    <footer>koniec</footer>
+    <footer id="copyright">
+        <p>Copyright C Mariusz Orbik</p>
+    </footer>
 
 </body>
 
