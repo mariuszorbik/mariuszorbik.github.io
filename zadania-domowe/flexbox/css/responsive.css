@@ -1,0 +1,24 @@
+@media all and (max-width: 992px) {
+    #left {
+        width: 100%;
+        height: 100px;
+        order: 3;
+    }
+    #main {
+        width: 70%;
+    }
+    #right {
+        width: 30%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #main {
+        width: 100%;
+    }
+    #right {
+        width: 100%;
+        order: 4;
+        height: 100px;
+    }
+}
