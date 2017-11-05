@@ -1,0 +1,269 @@
+body {
+    font-family: 'Roboto Slab', serif;
+    color: #777;
+}
+
+
+
+nav div.collapse {
+    font-family: 'Montserrat', serif;
+}
+
+.navbar a.navbar-brand, .navbar .collapse a.nav-link {
+    color: white;
+}
+
+nav.scroll {
+    background-color: rgba(14, 216, 214, 0.75); 
+    color: white;
+}
+
+#main-header {
+    position: relative;
+    background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../img/header/pictures_on_the_wall.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    color: white;
+}
+
+#header-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+button.read-more {
+    background-color: #0ed8d6;
+    font-family: 'Montserrat', serif;
+    transition: all .3s;
+    padding: 15px 30px;
+    border: 1px solid #0ed8d6;
+}
+
+button.read-more:hover {
+    background-color: #fff;
+    color: #0ed8d6;
+}
+
+#services {
+    padding-top: 50px;
+}
+
+.naglowekServices{
+    padding-bottom: 60px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+div.koloIcona, div.ikona {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+div.ikona {
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+    background-color: #0ed8d6;
+    margin-bottom: 30px;
+}
+
+div.ikona:hover {
+    background-color: #fff;
+    border: 1px solid #0ed8d6;
+    transform: rotate(360deg);
+    transition: all 1s;
+    
+}
+
+div.ikona i.fa {
+    color: #fff;
+}
+
+div.ikona:hover i.fa {
+    color: #0ed8d6;
+}
+
+div.koloIcona a {
+    text-decoration: none;
+} 
+
+/*portfolio*/
+.portfolio {
+    padding-top: 70px;
+    margin-top: 70px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background-color: #f7f7f7;
+}
+
+#portfolio {
+    margin-top: 50px;
+}
+
+#portfolio .portfolio-item {
+    background-color: #f7f7f7;
+}
+
+#portfolio .portfolio-image {
+    overflow: hidden;
+}
+
+#portfolio .portfolio-image .portfolio-image-background {
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    transition: all .3s;
+}
+
+#portfolio .portfolio-item .portfolio-image-mask {
+    background-color: rgba(14, 216, 214, 0.85);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0; 
+    cursor: pointer;
+    transition: all .3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portfolio-image-mask i.fa {
+    color: #fff;
+    font-size: 2em;
+}
+
+.portfolio-item figcaption {
+    padding-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#portfolio .portfolio-image .portfolio-image-background:hover {
+    transform: scale(1.5);
+}
+
+#portfolio .portfolio-image .portfolio-image-background:hover .portfolio-image-mask {
+    opacity: 1;
+}
+
+#portfolio-image-background-1 {
+    background-image: url(../img/portfolio/box_of_cookies.jpg);
+}
+
+#portfolio-image-background-2 {
+    background-image: url(../img/portfolio/chaotic_paint.jpg);
+}
+
+#portfolio-image-background-3 {
+    background-image: url(../img/portfolio/chestnut_on_bracket.jpg);
+}
+
+#portfolio-image-background-4 {
+    background-image: url(../img/portfolio/child_with_blue_paint.jpg);
+}
+
+#portfolio-image-background-5 {
+    background-image: url(../img/portfolio/house_with_blue_doors.jpg);
+}
+
+#portfolio-image-background-6 {
+    background-image: url(../img/portfolio/typing_on_laptop.jpg);
+}
+
+#team {
+    margin-top: 70px;
+}
+
+img.circle {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.social-link {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    background-color: #222;
+    border: 1px solid #222;
+    border-radius: 50%;
+    font-size: 1.8em;
+    color: #fff;
+    transition: all .3s;
+    margin: 5px;
+    display: inline-block;
+}
+
+.social-link:hover {
+    background-color: #0ed8d6;
+    color: #fff;
+    border: 1px solid #0ed8d6;
+}
+
+#contact {
+    margin-top: 60px;
+    
+    background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(../img/footer/world-map.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.contact-header {
+    padding-top: 50px;
+    color: #fff;
+}
+
+#contact .contact-form .contact-form-column {
+    height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#contact input, #contact textarea {
+    text-transform: uppercase;
+    padding: 15px;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 5px;
+}
+
+#contact input:not([type='submit']), #contact textarea {
+    border: 0px solid;
+}
+
+#contact textarea {
+    height: 100%;
+}
+
+#contact input[type='submit'] {
+    background-color: #0ed8d6;
+    border: 1px solid #0ed8d6;
+    color: #fff;
+    transition: all .3s;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+#contact input[type='submit']:hover {
+    background-color: #fff;
+    border: 1px solid #0ed8d6;
+    color: #0ed8d6;
+}
+
+/*footer*/
+
+.main-footer p {
+    line-height: 50px;
+}
+
+/*footer end*/
+
+
