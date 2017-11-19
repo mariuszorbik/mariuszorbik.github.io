@@ -1,0 +1,32 @@
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: $main-color;
+    font-family: $main-font;
+}
+
+head, section {
+    width: 100%;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100%;
+}
+
+.yellow {
+    color: $yellow-color;
+}
+
+.col-1-2 {
+    width: 50%;
+    float: left;
+}
